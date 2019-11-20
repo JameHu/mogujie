@@ -1,28 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
+    <tarbar class="footTar"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import tarbar from 'components/common/tabbar/tabbars'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    tarbar
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  @import "./assets/css/base.scss";
+.footTar{
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100vw;
 }
 </style>
