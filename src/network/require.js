@@ -2,8 +2,8 @@ import axios from 'axios'
 
 export function Axios(config) {
     const initalize = axios.create({
-        baseURL: 'http://106.54.54.237:8000/api/',
-        timeout: 5000
+        baseURL: 'http://106.54.54.237:8000/api/v1',
+        timeout: 50000
     })
 
     // Add a request interceptor

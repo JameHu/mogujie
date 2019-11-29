@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view></router-view>
-    <tarbar class="footTar" />
+    <tarbar class="footTar"/>
   </div>
 </template>
 
@@ -15,7 +15,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footTar {
   position: fixed;
   bottom: 0;

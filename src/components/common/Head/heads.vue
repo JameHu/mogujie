@@ -25,13 +25,13 @@
     height: 44px;
     background:$color-tint;
     .left{
-      width:20%;
+      width:10%;
     }
     .center{
-      width:60%;
+      width:80%;
     }
     .right{
-      width:20%;
+      width:10%;
     }
   }
 </style>

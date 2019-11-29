@@ -4,13 +4,23 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
     state: {
-
+        cartList:[],
+        nums:111
     },
     getters: {
-
+        getState(state){
+            return state.cartList
+        }
     },
     mutations: {
+        addshop(state,info){
+            // if(state.getState){
+            //
+            // }
+            console.log(info);
 
+            state.cartList.push(info)
+        }
     },
     actions: {
 
